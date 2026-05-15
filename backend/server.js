@@ -6,10 +6,10 @@ const user = require('./routes/userroute');
 const client = require('./routes/clientroutes')
 const project = require('./routes/projectroutes')
 const task = require('./routes/taskroutes')
+const cors = require("cors");
 
 const app = express();
 
-dbconnect();
 
 const allowedOrigins = [
   "https://project-management-system-gules.vercel.app",
@@ -28,6 +28,8 @@ app.use(cors({
 }));
 
 app.use(express.json())
+
+dbconnect();
 
 
 
