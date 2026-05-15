@@ -12,11 +12,13 @@ const app = express();
 dbconnect();
 
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: "project-management-system-o1c2.vercel.app",
   credentials: true
 }));
 
 app.use(express.json())
+
+app.use(cors())
 
 app.use("/api/auth" , user);
 app.use("/api/client" , client);
