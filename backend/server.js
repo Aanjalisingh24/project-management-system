@@ -12,7 +12,7 @@ const app = express();
 dbconnect();
 
 app.use(cors({
-  origin: "project-management-system-o1c2.vercel.app",
+  origin: "https://project-management-system-gules.vercel.app/",
   credentials: true
 }));
 
