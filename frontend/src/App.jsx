@@ -10,7 +10,7 @@ import Addclient from "./pages/Client_page/addclient";
 import AllClient from "./pages/Client_page/allclient";
 import Updateclient from "./pages/Client_page/updateclient"
 import PublicNavbar from "./component/publicnavbar";
-import Privatenavbar from "./component/privatenavbar";
+import Privatenavbar from "./component/Privatenavbar";
 import Allproject from "./pages/Project_page/allproject";
 import Alltask from "./pages/Task_page/alltask";
 import Addproject from "./pages/Project_page/addproject";
