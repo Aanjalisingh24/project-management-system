@@ -11,14 +11,25 @@ const app = express();
 
 dbconnect();
 
+const allowedOrigins = [
+  "https://project-management-system-gules.vercel.app",
+  "https://project-management-system-o1c2.vercel.app"
+];
+
 app.use(cors({
-  origin: "https://project-management-system-gules.vercel.app",
+  origin: function(origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
   credentials: true
 }));
 
 app.use(express.json())
 
-app.use(cors())
+
 
 app.use("/api/auth" , user);
 app.use("/api/client" , client);
