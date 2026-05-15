@@ -341,7 +341,7 @@ Through this project, I learned:
 
 ## Live Demo
 
-Frontend: project-management-system-o1c2.vercel.app
+Frontend: https://project-management-system-gules.vercel.app/
 
 Backend: https://project-management-system-1-1cbw.onrender.com
 
